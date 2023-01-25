@@ -13,7 +13,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "person_details")
 public class UserEntity {
-
+     
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
