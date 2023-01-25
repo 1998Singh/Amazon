@@ -37,8 +37,9 @@ public class UserController {
 
 	}
 
+	
 	@GetMapping("/user")
-	//comment for testing git
+	
 	public ResponseEntity<List<UserDto>> getItems(UserDto UserDto) {
 		List<UserDto> persons = UserService.getAll();
 		return new ResponseEntity<List<UserDto>>(persons, HttpStatus.OK);
